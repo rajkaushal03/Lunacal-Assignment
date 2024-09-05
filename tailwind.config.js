@@ -14,7 +14,7 @@ export default {
       colors: {
         'custom-dark': '#171717',
         'dark': '#28292F',
-        'bx-color': '#363C43'
+        'bx-color': '#32393E'
       },
     },
   },

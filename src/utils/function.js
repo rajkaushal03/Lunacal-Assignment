@@ -1,10 +1,13 @@
 // functions.js
 
-export const goToNextSlide = (currentSlide, imagesToShow, imagesLength) => {
+export const goToNextSlide = (currentSlide, imagesToShow, imagesLength , setState) => {
+
+  setState(false);
   return (currentSlide + imagesToShow) % imagesLength;
 };
 
-export const goToPrevSlide = (currentSlide, imagesToShow, imagesLength) => {
+export const goToPrevSlide = (currentSlide, imagesToShow, imagesLength, setState) => {
+  setState(true);
   return (currentSlide - imagesToShow + imagesLength) % imagesLength;
 };
 

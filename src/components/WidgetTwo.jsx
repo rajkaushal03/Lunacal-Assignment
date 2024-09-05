@@ -13,6 +13,7 @@ const WidgetTwo = ({ activeTab, setActiveTab }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [images, setImages] = useState([]);
   const imagesToShow = 1;
+  const [state, setState] = useState(false);
 
   useEffect(() => {
     // Load images from local storage when component mounts
@@ -21,7 +22,7 @@ const WidgetTwo = ({ activeTab, setActiveTab }) => {
   }, []);
   return (
     <div className="Box bg-bx-color rounded-3xl p-4  shadow-[9px_8px_8px_0px_#000]">
-        {/* question mark */}
+      {/* question mark */}
       <div className="absolute text-lg  text-white  mt-3">
         <FaRegQuestionCircle />
       </div>
@@ -59,24 +60,34 @@ const WidgetTwo = ({ activeTab, setActiveTab }) => {
           </label>
           <div className="flex justify-center items-center gap-2 ">
             <div
-              className="md:text-md lg:text-lg arrow"
+              className={`md:text-md lg:text-lg arrow ${
+                state ? "grad" : "text-gray-500"
+              }`}
               onClick={() => {
                 setCurrentSlide(
-                  goToPrevSlide(currentSlide, imagesToShow, images.length)
+                  goToPrevSlide(
+                    currentSlide,
+                    imagesToShow,
+                    images.length,
+                    setState
+                  )
                 );
-                // console.log("prev")
-                // console.log("current slide",currentSlide);
-                // console.log("imagetoshow",imagesToShow);
-                // console.log("images.length", images.length);
               }}
             >
               <FaArrowLeft />
             </div>
             <div
-              className="md:text-md lg:text-lg arrow"
+              className={`md:text-md lg:text-lg arrow ${
+                !state ? "grad" : "text-gray-500"
+              }`}
               onClick={() => {
                 setCurrentSlide(
-                  goToNextSlide(currentSlide, imagesToShow, images.length)
+                  goToNextSlide(
+                    currentSlide,
+                    imagesToShow,
+                    images.length,
+                    setState
+                  )
                 );
                 // console.log("next")
                 // console.log("current slide",currentSlide);
@@ -100,11 +111,7 @@ const WidgetTwo = ({ activeTab, setActiveTab }) => {
           }}
         >
           {images.map((image, index) => (
-            <ImageCard
-              key={index}
-              src={image.src}
-              alt={image.alt}
-            />
+            <ImageCard key={index} src={image.src} alt={image.alt} />
           ))}
         </div>
       </div>
