@@ -54,16 +54,16 @@ export const handleTabClick = (
     // If layout is vertical (column), we move the element on Y-axis
     switch (tab) {
       case "about":
-        setBeforePosition(0.06); // First tab position
+        setBeforePosition(0.15); // First tab position
         break;
       case "experiences":
-        setBeforePosition(1); // Second tab position
+        setBeforePosition(1.4); // Second tab position
         break;
       case "Recommended":
-        setBeforePosition(2); // Third tab position
+        setBeforePosition(2.5); // Third tab position
         break;
       default:
-        setBeforePosition(0);
+        setBeforePosition(0.06);
     }
   } else {
     // If layout is horizontal (row), move on X-axis

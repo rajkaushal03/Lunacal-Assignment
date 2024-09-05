@@ -88,9 +88,9 @@ body {
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .moving-before {
-    width: 97%;
-    height: calc(100% / 3.1);
+    width: 94%;
+    height: calc(100% / 3.7);
     top: 0;
-    left: 1%;
+    left: 2.5%;
   }
 }
