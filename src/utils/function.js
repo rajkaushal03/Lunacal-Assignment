@@ -69,10 +69,10 @@ export const handleTabClick = (
         setBeforePosition(0.02); // First tab position
         break;
       case "experiences":
-        setBeforePosition(1.04); // Second tab position
+        setBeforePosition(1.05); // Second tab position
         break;
       case "Recommended":
-        setBeforePosition(2.06); // Third tab position
+        setBeforePosition(2.07); // Third tab position
         break;
       default:
         setBeforePosition(0);

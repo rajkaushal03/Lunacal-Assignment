@@ -93,7 +93,7 @@ const WidgetTwo = ({ activeTab, setActiveTab }) => {
       {/* image sec */}
       <div className="Image  p-1 mt-5 mb-2.5 ml-6 mr-6 overflow-hidden">
         <div
-          className="carousel-inner flex  justify-around  p-3"
+          className="carousel-inner flex gap-14 justify-around  p-3"
           style={{
             transform: `translateX(-${(currentSlide * 100) / imagesToShow}%)`,
             transition: "transform 0.5s ease-in-out",

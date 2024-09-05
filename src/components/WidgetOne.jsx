@@ -38,7 +38,7 @@ const WidgetOne = ({ activeTab, setActiveTab }) => {
         <div
           className={`w-full rounded-2xl p-4 cursor-pointer  ${
             activeTab === "about"
-              ? "bg-dark shadow-[0px_0px_40px_5px_#000] transition-all duration-1000 ease-in text-white"
+              ? "bg-dark  transition-all duration-1000 ease-in text-white"
               : "hover-1"
           }`}
           onClick={() =>
@@ -51,7 +51,7 @@ const WidgetOne = ({ activeTab, setActiveTab }) => {
         <div
           className={`w-full rounded-2xl p-4 cursor-pointer  ${
             activeTab === "experiences"
-              ? "bg-dark shadow-[0px_0px_40px_5px_#000] transition-all duration-1000 ease-in text-white"
+              ? "bg-dark  transition-all duration-1000 ease-in text-white"
               : "hover-1"
           }`}
           onClick={() =>
@@ -69,7 +69,7 @@ const WidgetOne = ({ activeTab, setActiveTab }) => {
         <div
           className={`w-full rounded-2xl p-4 cursor-pointer  ${
             activeTab === "Recommended"
-              ? "bg-dark shadow-[0px_0px_40px_5px_#000] transition-all duration-1000 ease-in text-white"
+              ? "bg-dark  transition-all duration-1000 ease-in text-white"
               : "hover-1"
           }`}
           onClick={() =>
