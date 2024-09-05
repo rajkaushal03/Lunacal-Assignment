@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* styles/globals.css or a CSS module */
+body {
+  background: linear-gradient(180deg, #373e44 -100%, #191b1f 100%);
+}
+
+.line {
+  background: rgb(40, 40, 40);
+  background: linear-gradient(
+    180deg,
+    rgba(40, 40, 40, 1) 82%,
+    rgba(248, 248, 248, 1) 100%
+  );
+}
+.arrow {
+  color: #6b7280; /* text-gray-500 */
+  font-size: 0.75rem; /* text-xs */
+  border-radius: 9999px; /* rounded-full */
+  padding: 0.75rem; /* p-3 */
+  cursor: pointer; /* cursor-pointer */
+  box-shadow: 0px 0px 15px 1px #f7fafc; /* shadow-[0px_0px_15px_1px_#f7fafc] */
+  transition: all 0.1s ease-in;
+}
+
+.arrow:hover {
+  background-color: #000000; /* hover:bg-black */
+}
+
+.image {
+  filter: grayscale(100%);
+  width: 190px;
+  height: 179px;
+  transition: filter 0.5s ease-in, transform 0.5s ease-in;
+}
+
+.image:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1) rotate(-5deg);
+}
+
+.hover-1 {
+  background-image: linear-gradient(to right, #171717, #28292f);
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+
+  transition: 1s ease-in-out;
+}
+.hover-1:hover {
+  background-size: 100% 100%;
+}
+
+.Bar {
+  position: relative;
+  display: flex;
+}
+
+.moving-before {
+  content: ""; 
+  background-color: transparent;
+  position: absolute;
+  width: calc(100% / 3.1); 
+  height: 80%;
+  top: 1;
+  left: 0;
+  border-radius: 16px;
+  box-shadow: 0px 0px 40px 5px #000;
+  transition: transform 1s ease-in-out ;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .moving-before {
+    width: 97%; 
+    height: calc(100% / 3.1); 
+    top: 0;
+    left: 1%; 
+  }
+}
