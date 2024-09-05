@@ -9,7 +9,8 @@ import {
   handleImageUpload,
 } from "../utils/function.js";
 
-const WidgetTwo = ({ activeTab, setActiveTab }) => {
+const WidgetTwo = () => {
+  const [activeTab, setActiveTab] = useState();
   const [currentSlide, setCurrentSlide] = useState(0);
   const [images, setImages] = useState([]);
   const imagesToShow = 1;
@@ -23,7 +24,7 @@ const WidgetTwo = ({ activeTab, setActiveTab }) => {
   return (
     <div className="Box bg-bx-color rounded-3xl p-4  shadow-[9px_8px_8px_0px_#000]">
       {/* question mark */}
-      <div className="absolute text-lg  text-white  mt-3">
+      <div className="absolute text-xl  text-white  mt-3">
         <FaRegQuestionCircle />
       </div>
 
@@ -44,7 +45,7 @@ const WidgetTwo = ({ activeTab, setActiveTab }) => {
         {/* about and arrow key  */}
         <div className="flex justify-center items-center gap-4">
           <label
-            className="flex items-center bg-dark text-wrap text-xs md:text-sm lg:text-lg justify-center text-white  rounded-2xl p-3 transition-all duration-100 ease-in 
+            className="flex items-center bg-dark text-wrap text-xs md:text-sm lg:text-lg justify-center text-white  rounded-3xl p-3 transition-all duration-100 ease-in 
             hover:shadow-[5px_5px_20px_3px_#000,0px_0px_8px_0px_#ffff] hover:bg-transparent cursor-pointer"
             htmlFor="file-input"
           >
