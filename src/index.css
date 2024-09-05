@@ -3,17 +3,10 @@
 @tailwind utilities;
 
 /* styles/globals.css or a CSS module */
-/* body {
+body{
   background: linear-gradient(180deg, #373e44 -100%, #191b1f 100%);
-} */
-body {
-  background: linear-gradient(180deg,#373e44,#191b1f); /* Apply linear gradient */
-  background-size: cover; /* Makes the background cover the entire body */
-  background-position: center; /* Centers the background */
-  background-repeat: no-repeat; /* Prevents repeating of the background */
-  margin: 0;
-  padding: 0;/* Ensures body takes up full viewport height */
 }
+
 
 .grad {
   color: white;

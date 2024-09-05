@@ -20,7 +20,7 @@ const WidgetOne = ({ activeTab, setActiveTab }) => {
   }, []);
 
   return (
-    <div className="Box bg-bx-color rounded-3xl p-4 shadow-[9px_8px_8px_0px_#000] relative">
+    <div className="Box bg-bx-color rounded-3xl p-4  shadow-[9px_8px_8px_0px_#000] relative">
       <div className="absolute text-xl text-white mt-3">
         <FaRegQuestionCircle />
       </div>

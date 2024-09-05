@@ -22,7 +22,7 @@ const WidgetTwo = () => {
     setImages(storedImages);
   }, []);
   return (
-    <div className="Box bg-bx-color rounded-3xl p-4  shadow-[9px_8px_8px_0px_#000]">
+    <div className="Box bg-bx-color rounded-3xl p-4 h-[335px]  shadow-[9px_8px_8px_0px_#000]">
       {/* question mark */}
       <div className="absolute text-xl  text-white  mt-3">
         <FaRegQuestionCircle />
@@ -103,7 +103,7 @@ const WidgetTwo = () => {
       </div>
 
       {/* image sec */}
-      <div className="Image  p-1 mt-5 mb-2.5 ml-6 mr-6 overflow-hidden">
+      <div className="Image   p-1 mt-5 mb-2.5 ml-6 mr-6 overflow-hidden">
         <div
           className="carousel-inner flex gap-14 justify-around  p-3"
           style={{
