@@ -24,7 +24,7 @@ const WidgetOne = ({ activeTab, setActiveTab }) => {
       <div className="absolute text-xl text-white mt-3">
         <FaRegQuestionCircle />
       </div>
-      <div className="Bar flex justify-center text-gray-500 items-center text-lg md:flex-wrap lg:flex-nowrap font-medium leading-5 text-center font-poppins rounded-3xl bg-custom-dark  p-2 mt-2.5 mb-2.5 ml-6 mr-6 relative gap-2">
+      <div className="Bar flex justify-center text-nowrap text-gray-500 items-center text-lg md:flex-wrap lg:flex-nowrap font-medium leading-5 text-center font-poppins rounded-3xl bg-custom-dark  p-2 mt-2.5 mb-2.5 ml-6 mr-6 relative gap-2">
         {/* Moving Before Element */}
         <div
           className="moving-before"
