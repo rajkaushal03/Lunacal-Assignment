@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+
 import { useState, useEffect } from "react";
 import { FaArrowRight, FaArrowLeft, FaRegQuestionCircle } from "react-icons/fa";
 import { HiOutlinePlusSm } from "react-icons/hi";
